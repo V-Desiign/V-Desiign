@@ -628,7 +628,6 @@
 .Logo2 {
     position: absolute;
     display: flex;
-    align-items: center;
     top: 18%;
     left: 40%;
 }
