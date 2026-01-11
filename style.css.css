@@ -1,0 +1,2549 @@
+
+
+
+@media screen and (min-width:360px) and (max-width:480px) {
+        
+    html,body{
+        overflow-x: hidden;
+    }
+    
+    
+    .section-one{
+      display: flex;
+      
+
+    }
+
+
+   
+
+    .box-one{
+     height: 100px;
+     width: 200px;
+     flex: 1;
+    }
+
+
+
+    *{
+        margin: 0;
+        padding:0;
+        
+    }
+
+
+
+
+
+
+
+    /* Hamburger button */
+    .menu-btn {
+     position: fixed;
+     top: 15px;
+     right: 15px;
+     font-size: 28px;
+     background:none;
+     border: none;
+     z-index: 1001;
+     cursor: pointer;
+     color: white;
+    }
+
+    /* Overlay */
+    #overlay {
+     position: fixed;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.5);
+     opacity: 0;
+     pointer-events: none;
+     transition: 0.3s;
+     z-index: 1000;
+     
+    }
+
+    /* Sidebar */
+    #sidebar {
+     position: fixed;
+     top: 0;
+     left: -260px;
+     width: 260px;
+     height: 100vh;
+     background: #000;
+     padding: 20px;
+     transition: 0.3s ease;
+     z-index: 1002;
+     
+    }
+
+    /* Sidebar links */
+    #sidebar a {
+     display: block;
+     color: white;
+     text-decoration: none;
+     margin: 20px 0;
+     font-size: 18px;
+    }
+
+    /* Close button */
+    .close-btn {
+     background: none;
+     border: none;
+     color: white;
+     font-size: 26px;
+     margin-bottom: 30px;
+     cursor: pointer;
+    }
+
+    /* ACTIVE STATE */
+    #sidebar.active {
+     left: 0;
+    }
+
+    #overlay.active {
+     opacity: 1;
+     pointer-events: auto;
+    }
+
+    /* Hide sidebar on desktop */
+    @media (min-width: 768px) {
+     #sidebar,
+     #overlay,
+     .menu-btn {
+        display: none;
+    }
+    }
+
+
+
+
+
+
+
+
+
+    .dream{
+        position: relative;
+    }
+
+
+    .dream-img{
+        width:100%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+            
+            
+            
+            
+    
+
+
+
+
+
+    .Logo{
+        position: absolute;
+        top: 0%;
+        left: 5%;
+    }
+
+
+    .Logo-img{
+        width: 20%;
+        height: 20%;
+    }
+
+
+
+    .welcome-text{
+        position:absolute;
+        color:white;
+        top: 27%;
+        left: 33%;
+        font-size: 17px;
+        white-space: nowrap;
+        
+        
+        
+    }
+
+
+
+
+    .footer-left{
+        position: absolute;
+        color: white;
+        top: 85%;
+        left: 5%;
+        font-size: 10px;
+
+
+    }
+
+
+
+
+
+    .footer-center{
+        position:absolute;
+        color: white;
+        top: 85%;
+        left: 45%;
+        font-size: 10px;
+
+    }
+
+
+
+
+    .footer-right{
+        position: absolute;
+        color: white;
+        top:85%;
+        left: 81%;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .section-two{
+    display: flex;
+  
+ }
+
+
+
+
+ .box-two{
+    width: 200px;
+    height: 100px;
+    flex: 1;
+ }
+
+
+
+
+
+ /* ----------------------------- */
+/* UNIVERSAL RESET */
+/* ----------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/* BODY STYLES */
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+/* BLACK HERO SECTION */
+/* ----------------------------- */
+.black-hero {
+    position: relative;
+    height: 600vh;
+    width:100%;
+    background: #000000;     
+    left: 0px;
+    top: 450px;
+    border-bottom: 20px solid white;
+
+}
+
+/* ----------------------------- */
+/* HERO RIGHT PARAGRAPH */
+/* ----------------------------- */
+.hero-right-paragraph {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    width: 40%;
+    color: white;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+/* ----------------------------- */
+/* BENTO WRAPPER (LEFT IMAGES) */
+/* ----------------------------- */
+.bento-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    padding-top: 1000px;
+}
+
+/* ----------------------------- */
+/* ZILLOW CARD */
+/* ----------------------------- */
+.Zillow {
+    position: absolute;
+    align-items: center;
+    gap: 50px;
+    left: 5%;
+    top: 23%;
+    
+}
+
+.Zillow-img {
+    width: 97%;
+    height: 170%;
+}
+
+/* ZILLOW LOGO AND BUTTONS */
+.zlogo {
+    position:absolute;
+    left: 39%;
+    top: 53%;
+}
+
+.zlogo-img {
+    width: 20px;
+}
+
+
+
+.pill-agent {
+    position: absolute;
+    bottom: 5px;
+    transform: translateX(-50%);
+    padding: 1px 5px;
+    background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+    color: white;
+    border:5px solid white;
+    border-radius: 20px;
+    border-width: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    left: 52%;
+    
+    
+}
+
+
+
+
+
+
+
+    .pill-buy {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 6px 12px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        display: none;
+        
+    }
+
+
+
+
+    
+    .pill-sell {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 6px 12px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        display: none;
+        
+    }
+
+
+
+
+    
+    .pill-rent {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 6px 12px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        display: none;
+        
+    }
+
+
+
+
+
+.z-paragrh {
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 28%;
+    font-family: 'Gruppo', sans-serif;
+}
+
+
+
+
+
+.z-text{
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    left: 47%;
+    top: 57%;
+    font-family: 'Gruppo', sans-serif;
+
+}
+
+
+/* ----------------------------- */
+/* GUCCI CARD */
+/* ----------------------------- */
+.Gucci {
+    position: absolute;
+    align-items: center;
+    gap: 50px;
+    left: 15%;
+    top: 32%;
+}
+
+.Gucci-img {
+    width: 85%;
+    height: 200%;
+    border-radius: 50px;
+    
+}
+
+/* GUCCI LOGO AND BUTTONS */
+.glogo {
+    position: absolute;
+    left: 12%;
+    top: 25%;
+}
+
+.glogo-img {
+    width:70%;
+    height: 100%;
+}
+
+
+.homebtn{
+    position:absolute;
+    top: 88%;
+    left: 2%;
+
+}
+
+
+.homebtn-img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.products{
+    position:absolute;
+    left:20%;
+    top:87%;
+}
+
+
+.products-img{
+    width:40px;
+    height: 40px;
+}
+
+
+.menu{
+    position:absolute;
+    top: 89%;
+    right: 20%;
+}
+
+.menu-img{
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.search{
+    position:absolute;
+    right: 40%;
+    top: 87%;
+}
+
+
+.search-img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+.font-home, .font-products, .font-menu, .font-search {
+    position: absolute;
+    top: 84%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 10px;
+    font-family: "Kapakana", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    
+}
+
+.font-home { left: 2%; }
+.font-products { left: 20%; }
+.font-search { left: 45%; }
+.font-menu { left: 73%; }
+
+/* ----------------------------- */
+/* COFFEE CARD */
+/* ----------------------------- */
+.Coffee {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    top: 47%;
+    left: 10%;
+}
+
+.Coffee-img {
+    width:90%;
+    height: 130%;
+}
+
+
+.Coffee-text{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    left: 10%;
+}
+
+.Coffee-text-two{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    left: 70%;
+}
+
+.taste-btn{
+    position:absolute;
+    display: grid;
+    font-size: 11px;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 50px;
+    border:5px solid white;
+    border-width: 3px;
+    left:30%;
+    bottom: 5%;
+    background:linear-gradient(-20deg, rgb(99, 67, 32),rgb(54, 36, 36)) ;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+}
+
+/* ----------------------------- */
+/* ME CARD */
+/* ----------------------------- */
+.me {
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    height: 5%;
+    top: 9%;
+    left: 5%;
+    padding: 10px;
+    background: linear-gradient(cyan -50%, rgba(241, 21, 168, 1));
+    border-radius: 100px;
+    
+}
+
+.me-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 200px;
+}
+
+/* ----------------------------- */
+/* LOGO2 */
+/* ----------------------------- */
+.Logo2 {
+    position: absolute;
+    display: flex;
+    top: 18%;
+    left: 40%;
+}
+
+.Logo2-img {
+    width: 70%;
+    height: 100%;
+}
+
+/* ----------------------------- */
+/* COLUMNS TEXT */
+/* ----------------------------- */
+.colum-paragrah {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 62%;
+    left: 23%;
+}
+
+.colum-two {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 78%;
+    left: 24%;
+}
+
+.cloum-three {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 93%;
+    left: 33%;
+}
+
+/* ----------------------------- */
+/* EXTRA IMAGES */
+/* ----------------------------- */
+.fivestar {
+    position: absolute;
+    top: 57%;
+    left: 7%;
+}
+
+.fivestar-img {
+    width: 100%;
+    height: 70%;
+}
+
+.whitelogo {
+    position: absolute;
+    top: 71%;
+    left: 10%;
+}
+
+.whitelogo-img {
+    width: 90%;
+    height: 70%;
+}
+
+.clock {
+    position: absolute;
+    top: 87%;
+    left: 30%;
+}
+
+.clock-img {
+    width: 70%;
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-three{
+  display: flex;
+  
+}
+
+    
+    
+
+
+.box-three{
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.white-herosection{
+    position: relative;
+    top: 670vh;
+    background-color:white;
+    width: 243%;
+    height: 130vh;
+    
+    
+
+}
+
+
+
+
+.gradient-square{
+    position: absolute;
+    width:180px ;
+    height:700px ;
+    left:1%;
+    top: 10%;
+    border-radius: 50px;
+    background:linear-gradient(55deg,orange,rgb(231, 40, 184)90%)
+     
+}
+
+
+
+.gradient-square-text{
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    line-height: 1.79;
+    top: 5%;
+    width: 94%;
+    left: 5%;
+
+}
+
+
+
+
+
+
+/*Collage section*/
+
+
+
+
+.scape{
+    position: absolute;
+    left:100%;
+    top:-5%;
+
+}
+
+.scape-img{
+    width: 90px;
+    height: 130px;
+    border-radius: 500px;
+    transform: rotate(-15deg);
+}
+
+
+
+
+.question{
+    position:absolute;
+    left: 147%;
+    top:-2%;
+}
+
+
+
+.question-img{
+    width: 80px;
+    height: 110px;
+    transform: rotate(8deg);
+}
+
+
+.nebula{
+    position: absolute;
+    left: 120%;
+    top: 27%;
+
+}
+
+
+.nebula-img{
+    width: 120px;
+    height: 210px;
+    transform: rotate(-15deg);
+}
+
+
+
+.history{
+    position: absolute;
+    left: 130%;
+    top: 61%;
+    
+
+}
+
+
+
+.history-img{
+
+    width: 110px;
+    height: 210px;
+}
+
+
+.vogue{
+    position: absolute;
+    left: 85%;
+    top: 90%;
+}
+
+
+.vogue-img{
+
+    width: 140px;
+    height:210px;
+    border-radius: 40px;
+    transform: rotate(25deg);
+}
+
+
+
+
+
+
+
+.jazzmin{
+    position: absolute;
+    left: 5%;
+    top: 100%;
+
+}
+
+
+
+.jazzmin-img{
+
+    width: 100px;
+    height: 150px;
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-four{
+    display: flex;
+    
+}
+
+
+
+.box-four{
+    position: relative;
+    width: 45vh;
+    height: 67vh;
+    top:478vh;
+}
+
+
+
+
+
+
+
+.reachout-section{
+    position:relative;
+    width: 123%;
+    height: 60vh;
+   background-color: #000000;
+   top: 350vh;
+}
+
+
+
+.phone{
+    position: absolute;
+    top: 534%;
+    right: 40%;
+
+}
+
+
+.phone-img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.email{
+    position: absolute;
+    top: 555%;
+    right: 40%;
+
+}
+
+
+
+
+.email-img{
+
+    width: 60px;
+    height: 60px;
+
+}
+
+
+
+
+
+.ig{
+    position: absolute;
+    top:579%;
+    right: 40%;
+}
+
+
+.ig-img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+.number-gradient{
+  display: inline-block;
+  position: absolute;
+  font-size: 20px; 
+  top: 538%;
+  right: 0%;
+  background: linear-gradient(90deg, cyan, rgb(194, 17, 194));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* important for Chrome/Safari */
+
+}
+
+
+
+
+
+
+
+.email-gradient{
+   display: inline-block;
+   position: absolute;
+   font-size: 20px;  
+   top: 560%;
+   right: 0%;
+   background: linear-gradient(90deg, cyan, rgb(194, 17, 194));
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent; /* important for Chrome/Safari */
+
+}
+
+
+
+
+
+
+
+.social-gradient{
+
+   display: inline-block;
+   position: absolute;
+   font-size: 20px;  
+   top:584%;
+   right: 0%;
+   background: linear-gradient(90deg, cyan, rgb(194, 17, 194));
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent; /* important for Chrome/Safari */
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Laptop and Desktop Screens (1000px and up) */
+ @media screen and (min-width:1024px) {
+
+
+    
+    html,body{
+        overflow-x: hidden;
+    }
+    
+
+
+    .section-one{
+      display: flex;
+
+    }
+
+
+
+
+
+    .box-one{
+    height: 100px;
+    width: 200px;
+    }
+
+
+
+    *{
+        margin: 0;
+        padding:0;
+    }
+
+
+
+
+
+
+    /* ------------------------------ */
+    /* NAVBAR WITH INNER GRADIENT BORDER */
+    /* ------------------------------ */
+    .tablet-nav {
+        position: absolute;
+        background: black;
+        width: 880px; /* wider to fit logo + buttons */
+        height: 90px;
+        top: 0%;
+        padding: 15px 30px;
+        border-radius: 80px;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between; /* logo left, buttons right */
+        align-items: center;
+        left: 120%;
+    }
+
+    /* OUTER GRADIENT */
+    .tablet-nav::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(135deg, rgb(185, 3, 185), cyan 100%);
+        z-index: -2;
+    }
+
+    /* INNER BLACK LAYER */
+    .tablet-nav::after {
+        position:absolute;
+        content: "";
+        inset: 4px;
+        border-radius: 80px;
+        background: black;
+        z-index: -1;
+    }
+
+
+
+
+
+    /* LOGO */
+
+
+    .Logo{
+        position: absolute;
+        top: -30%;
+    }
+
+
+
+    .Logo-img{
+    
+        width: 150px;
+        height: 150px;
+        
+    }
+
+
+
+    /* ------------------------------ */
+    /* TABLET BUTTONS */
+    /* ------------------------------ */
+    .nav-buttons {
+        display: flex;
+        gap: 15px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .nav-buttons a {
+        position: relative;
+        left: 350px;
+        background: linear-gradient(135deg, purple, cyan);
+        padding: 10px 30px; /* keeps buttons large */
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 25px;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .nav-buttons a::before {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        border-radius: inherit;
+        background: linear-gradient(135deg, purple, cyan);
+        z-index: -2;
+    }
+    .nav-buttons a::after {
+        content: "";
+        position: absolute;
+        inset: 1px;
+        background:white;
+        border-radius: 21px;
+        z-index: -1;
+    }
+
+    .nav-buttons a:hover {
+        color: cyan;
+        text-shadow: 0 0 1px cyan;
+    }
+
+
+
+
+
+
+
+
+    .dream{
+        position: relative;
+    }
+
+
+    .dream-img{
+        width: 219vh;
+        height: 950px;
+        object-fit: cover;
+    }
+
+            
+            
+            
+            
+    
+
+
+
+
+
+    .Logo{
+        position: absolute;
+        top: 1%;
+    }
+
+
+    .Logo-img{
+        width: 20%;
+        height: 20%;
+    }
+
+
+
+    .welcome-text{
+        position:absolute;
+        color:white;
+        top: 320%;
+        left: 40%;
+        font-size: 30px;
+    }
+
+
+
+
+    .footer-left{
+        position: absolute;
+        color: white;
+        top: 940%;
+        left: -20%;
+        font-size: 20px;
+
+
+    }
+
+
+
+
+
+    .footer-center{
+        position:absolute;
+        color: white;
+        top: 940%;
+        left:45%;
+        font-size: 20px;
+
+    }
+
+
+
+
+    .footer-right{
+        position: absolute;
+        color: white;
+        top:880%;
+        left: 110%;
+        font-size: 20px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-two{
+    padding: 0px 0;
+    
+    }
+
+
+    /* ----------------------------- */
+    /* UNIVERSAL RESET */
+    /* ----------------------------- */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* ----------------------------- */
+    /* BODY STYLES */
+    /* ----------------------------- */
+
+
+    /* ----------------------------- */
+    /* BLACK HERO SECTION */
+    /* ----------------------------- */
+    .black-hero {
+        position: relative;
+        width:219vh;
+        height: 300vh;
+        background: #000000;     
+        padding-bottom: 400vh;
+        top: 850%;
+
+    }
+
+    /* ----------------------------- */
+    /* HERO RIGHT PARAGRAPH */
+    /* ----------------------------- */
+    .hero-right-paragraph {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 350px;
+        color: white;
+        font-size: 30px;
+        line-height: 1.8;
+    }
+
+    /* ----------------------------- */
+    /* BENTO WRAPPER (LEFT IMAGES) */
+    /* ----------------------------- */
+    .bento-wrapper {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        padding-top: 1000px;
+    }
+
+    /* ----------------------------- */
+    /* ZILLOW CARD */
+    /* ----------------------------- */
+    .Zillow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        left: 5%;
+        top: 5%;
+    }
+
+    .Zillow-img {
+        width: 700px;
+        height: 400px;
+    }
+
+    /* ZILLOW LOGO AND BUTTONS */
+    .zlogo {
+        position:absolute;
+        left:290px;
+        top: 55%;
+    }
+
+    .zlogo-img {
+        width: 30px;
+    }
+
+
+
+
+
+
+    .pill-buy {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 6px 12px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+        
+    }
+
+
+
+
+    
+    .pill-sell {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 6px 12px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+        
+    }
+
+
+
+
+    
+    .pill-rent {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding: 6px 12px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        display: block;
+    }
+
+
+
+
+    
+    .pill-agent {
+        position: absolute;
+        bottom: 20px;
+        transform: translateX(-50%);
+        padding:5px 6px;
+        background:linear-gradient(-40deg,transparent -40%,rgba(216, 181, 68, 0.986) );
+        color: white;
+        border:5px solid white;
+        border-radius: 50px;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        width: 132px;
+        
+    }
+
+    .pill-buy { left: 12%; }
+    .pill-sell { left: 33%; }
+    .pill-rent { left: 55%; }
+    .pill-agent { left: 85%; }
+
+
+
+
+    .z-paragrh {
+        font-size: 15px;
+        color: white;
+        position: absolute;
+        left:286px;
+        top: 119px;
+        font-family: 'Gruppo', sans-serif;
+    }
+
+
+    .z-text{
+        font-size: 17px;
+        color: white;
+        position: absolute;
+        left:343px;
+        top: 231px;
+        font-family: 'Gruppo', sans-serif;
+
+    }
+
+    /* ----------------------------- */
+    /* GUCCI CARD */
+    /* ----------------------------- */
+    .Gucci {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        left: 28%;
+        top: 25%;
+    }
+
+    .Gucci-img {
+        width: 300px;
+        height: 500px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+    /* GUCCI LOGO AND BUTTONS */
+    .glogo {
+        position: absolute;
+        left: 20%;
+        top: 35%;
+    }
+
+    .glogo-img {
+        width: 200px;
+        height: 130px;
+    }
+
+
+    .homebtn{
+        position:absolute;
+        top: 90%;
+
+    }
+
+
+    .homebtn-img{
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .products{
+        position:absolute;
+        left:24%;
+        top:88%;
+    }
+
+
+    .products-img{
+        width:70px;
+        height: 70px;
+    }
+
+
+    .menu{
+        position:absolute;
+        top: 90%;
+        right: 29%;
+    }
+
+    .menu-img{
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .search{
+        position:absolute;
+        right: 0%;
+        top: 87%;
+    }
+
+
+    .search-img{
+        width: 80px;
+        height: 80px;
+    }
+
+
+
+
+
+
+
+
+    .font-home, .font-products, .font-menu, .font-search {
+        position: absolute;
+        top: 87%;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 11px;
+        font-family: "Kapakana", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        
+    }
+
+    .font-home { left: 10px; }
+    .font-products { left: 85px; }
+    .font-menu { left: 172px; }
+    .font-search { left: 240px; }
+
+    /* ----------------------------- */
+    /* COFFEE CARD */
+    /* ----------------------------- */
+    .Coffee {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        top: 46%;
+        left: 20%;
+    }
+
+    .Coffee-img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .taste-btn{
+        position: absolute;
+        font-size: 17px;
+        color: white;
+        padding: 4px 3px;
+        border-radius: 50px;
+        border:5px solid white;
+        border-width: 5px;
+        left:28%;
+        bottom: 10px;
+        background:linear-gradient(-20deg, rgb(99, 67, 32),rgb(54, 36, 36)) ;
+        font-family: "Italianno", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* ----------------------------- */
+    /* ME CARD */
+    /* ----------------------------- */
+    .me {
+        position: absolute;
+        display: inline-block;
+        width: 200px;
+        height: 300px;
+        top: 25%;
+        left: 5%;
+        padding: 10px;
+        background: linear-gradient(cyan -50%, rgba(241, 21, 168, 1));
+        border-radius: 200px;
+        
+    }
+
+    .me-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 900px;
+    }
+
+    /* ----------------------------- */
+    /* LOGO2 */
+    /* ----------------------------- */
+    .Logo2 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 39%;
+        left: 0%;
+    }
+
+    .Logo2-img {
+        width: 250px;
+        height: 260px;
+    }
+
+    /* ----------------------------- */
+    /* COLUMNS TEXT */
+    /* ----------------------------- */
+    .colum-paragrah {
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 5%;
+    }
+
+    .colum-two {
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 40%;
+    }
+
+    .cloum-three {
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 70%;
+        left: 80%;
+    }
+
+    /* ----------------------------- */
+    /* EXTRA IMAGES */
+    /* ----------------------------- */
+    .fivestar {
+        position: absolute;
+        top: 72%;
+        left: -2%;
+    }
+
+    .fivestar-img {
+        width: 330px;
+        height: 250px;
+    }
+
+    .whitelogo {
+        position: absolute;
+        top: 72%;
+        left: 34%;
+    }
+
+    .whitelogo-img {
+        width: 278px;
+        height: 250px;
+    }
+
+    .clock {
+        position: absolute;
+        top: 74%;
+        left: 80%;
+    }
+
+    .clock-img {
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .section-three{
+    display: flex;
+    
+    }
+
+        
+        
+
+
+    .box-three{
+        width: 200px;
+        height: 100px;
+    }
+
+
+
+
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+
+
+
+
+    .white-herosection{
+        position: relative;
+        top: 487vh;
+        background-color:white;
+        width: 219vh;
+        height: 210vh;
+        
+        
+
+    }
+
+
+
+
+    .gradient-square{
+        position: absolute;
+        width:280px ;
+        height:700px ;
+        left:6%;
+        top: 10%;
+        border-radius: 50px;
+        background:linear-gradient(55deg,orange,rgb(231, 40, 184)90%)
+        
+    }
+
+
+
+    .gradient-square-text{
+        position: absolute;
+        color: white;
+        font-size: 17px;
+        line-height: 1.79;
+        top: 5%;
+        width: -30px;
+        left: 10px;
+
+    }
+
+
+
+
+
+
+    /*Collage section*/
+
+
+
+
+    .scape{
+        position: absolute;
+        left:130%;
+        top:-15%;
+
+    }
+
+    .scape-img{
+        width: 210px;
+        height: 260px;
+        border-radius: 500px;
+        transform: rotate(-15deg);
+    }
+
+
+
+
+    .question{
+        position:absolute;
+        left: 197%;
+        top:-2%;
+    }
+
+
+
+    .question-img{
+        width: 170px;
+        height: 250px;
+        transform: rotate(8deg);
+    }
+
+
+    .nebula{
+        position: absolute;
+        left: 180%;
+        top: 35%;
+
+    }
+
+
+    .nebula-img{
+        width: 240px;
+        height: 410px;
+        transform: rotate(-15deg);
+    }
+
+
+
+    .history{
+        position: absolute;
+        left: 270%;
+        top: 68%;
+        
+
+    }
+
+
+
+    .history-img{
+
+        width: 210px;
+        height: 390px;
+        transform: rotate(2deg);
+    }
+
+
+    .vogue{
+        position: absolute;
+        left: 105%;
+        top: 78%;
+    }
+
+
+    .vogue-img{
+
+        width: 240px;
+        height:340px;
+        border-radius: 40px;
+        transform: rotate(25deg);
+    }
+
+
+
+
+
+
+
+    .jazzmin{
+        position: absolute;
+        left: 45%;
+        top: 100%;
+
+    }
+
+
+
+    .jazzmin-img{
+
+        width: 170px;
+        height: 250px;
+        transform: rotate(-10deg);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+.section-four{
+    display: flex;
+    
+}
+
+
+
+.box-four{
+    position: relative;
+    width: 45vh;
+    height: 67vh;
+    top:478vh;
+}
+
+
+
+
+
+
+
+.reachout-section{
+    position:relative;
+    width: 219vh;
+    height: 700px;
+   background-color: #000000;
+   top: 235%;
+}
+
+
+
+.phone{
+    position: absolute;
+    top: 274%;
+    right: -507px;
+
+}
+
+
+.phone-img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.email{
+    position: absolute;
+    top: 307%;
+    right: -510px;
+
+}
+
+
+
+
+.email-img{
+
+    width: 60px;
+    height: 60px;
+
+}
+
+
+
+
+
+.ig{
+    position: absolute;
+    top: 345%;
+    right: -510px;
+}
+
+
+.ig-img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+.number-gradient{
+  display: inline-block;
+  position: absolute;
+  font-size: 30px; 
+  top: 278%;
+  right: -790px;
+  background: linear-gradient(90deg, cyan, rgb(194, 17, 194));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* important for Chrome/Safari */
+
+}
+
+
+
+
+
+
+
+.email-gradient{
+   display: inline-block;
+   position: absolute;
+   font-size: 30px;  
+   top: 310%;
+   right: -810px;
+   background: linear-gradient(90deg, cyan, rgb(194, 17, 194));
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent; /* important for Chrome/Safari */
+
+}
+
+
+
+
+
+
+
+.social-gradient{
+
+   display: inline-block;
+   position: absolute;
+   font-size: 30px;  
+   top:347%;
+   right: -760px;
+   background: linear-gradient(90deg, cyan, rgb(194, 17, 194));
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent; /* important for Chrome/Safari */
+
+}
+ }
+
+     
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
